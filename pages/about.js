@@ -21,8 +21,8 @@ class About extends Component{
     // console.log(this.state.data)
     return (
           <Layout title={'About'}>
-              <div className="about_header">
-                about
+              <div className="project">
+                <h1 className="coming-soon">under development!!</h1>
               </div>
           </Layout>    
     )

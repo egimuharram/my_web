@@ -270,7 +270,7 @@ var works = function works() {
     className: "project"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "coming-soon"
-  }, "Coming Soon!!")));
+  }, "under development!!")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (works);
