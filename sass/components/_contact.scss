@@ -1,0 +1,63 @@
+.form-control {
+    border          : 1px solid #ffffffa1 !important;
+    background-color: rgba(255, 255, 255, 0.233) !important;
+}
+.contact-section{
+    margin          : 8rem 3.5rem 3.5rem;
+    vertical-align  : middle;
+    &__form{
+        padding     : 2rem;
+        font-size   : 1.5rem;
+        font-family : 'Josefin Sans', sans-serif;
+
+        &-top{
+            padding-left: 15rem;
+
+            h3 a {
+                color: black;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &-bottom{
+            padding-left: 15rem;
+        }
+
+        ul{
+            li{
+                margin-right: 2.5rem;
+                display: inline-block;
+                list-style: none;
+                font-size: 5rem;
+                
+                a {
+                    & .fa-instagram{
+                        color: #d6243c;
+                        // background: #d6249f;
+                        // background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                    }
+
+                    & .fa-github{
+                        color: black;
+                    }
+                }
+            }
+        }
+        &-input{
+            border-radius: .5rem !important;
+        }
+        &-textarea{
+            border-radius: .5rem !important;
+            height: 10rem !important;
+        }
+    }
+
+    button{
+        background-color: white;
+        .btn{
+            padding: .75rem .75rem;
+        }
+    }
+}

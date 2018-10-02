@@ -1,0 +1,28 @@
+.navigation{
+    &__list{
+        // border-bottom   : 1px solid white;
+
+        & .active{
+            color       : rgb(49, 49, 49);
+            // border-bottom: 2px solid rgb(31, 23, 2);
+        }
+        
+        & a{
+            font-family     : $navbar-font2;
+            color           : rgb(255, 255, 255);
+            font-size       : 1.5rem;
+            font-weight     : 700;
+            padding         : 0!important;
+            margin-top      : 1.5rem;
+            margin-right    : 12rem;
+            margin-left     : 14rem;
+            
+            &:hover{
+                color       : rgb(49, 49, 49);
+            }
+        }
+    }
+
+
+    
+}

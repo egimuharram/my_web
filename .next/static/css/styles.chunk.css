@@ -1,0 +1,197 @@
+/*
+0 - 600px       :   Phone
+600 - 900px     :   Tablet Potrait
+600 - 1200px    :   Tablet Landscape
+[1200 - 1800px] :   Tablet Potrait
+1800px +        :   Tablet Potrait
+*/
+/* 
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-lans
+- big-desktop
+
+ORDER:  Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* default 16px */
+  /* font-size: 10px; */
+  font-size: 62.5%; }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 77%; } }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+::-webkit-scrollbar-button {
+  display: block;
+  height: 13px;
+  border-radius: 0px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffe137;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff3a; }
+
+::-webkit-scrollbar {
+  width: 2px; }
+
+.m-t-20 {
+  margin-top: 2rem; }
+
+.m-t-50 {
+  margin-top: 5rem; }
+
+.box-header {
+  background-image: url(http://localhost:3001/photo/head.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  padding: 3rem; }
+
+.pos-rel {
+  height: 100vh;
+  position: relative; }
+
+.box-project {
+  background-image: url(http://localhost:3001/photo/head.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 3rem;
+  width: 100%;
+  z-index: -1; }
+
+.box-contact {
+  background-image: url(http://localhost:3001/photo/head.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 3rem;
+  width: 100%;
+  z-index: -1; }
+
+.navigation__list .active {
+  color: #313131; }
+
+.navigation__list a {
+  font-family: "Comfortaa", cursive;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0 !important;
+  margin-top: 1.5rem;
+  margin-right: 12rem;
+  margin-left: 14rem; }
+  .navigation__list a:hover {
+    color: #313131; }
+
+.form-control {
+  border: 1px solid #ffffffa1 !important;
+  background-color: rgba(255, 255, 255, 0.233) !important; }
+
+.contact-section {
+  margin: 8rem 3.5rem 3.5rem;
+  vertical-align: middle; }
+  .contact-section__form {
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif; }
+    .contact-section__form-top {
+      padding-left: 15rem; }
+      .contact-section__form-top h3 a {
+        color: black; }
+        .contact-section__form-top h3 a:hover {
+          text-decoration: none; }
+    .contact-section__form-bottom {
+      padding-left: 15rem; }
+    .contact-section__form ul li {
+      margin-right: 2.5rem;
+      display: inline-block;
+      list-style: none;
+      font-size: 5rem; }
+      .contact-section__form ul li a .fa-instagram {
+        color: #d6243c; }
+      .contact-section__form ul li a .fa-github {
+        color: black; }
+    .contact-section__form-input {
+      border-radius: .5rem !important; }
+    .contact-section__form-textarea {
+      border-radius: .5rem !important;
+      height: 10rem !important; }
+  .contact-section button {
+    background-color: white; }
+    .contact-section button .btn {
+      padding: .75rem .75rem; }
+
+.home {
+  margin: 4rem 3.5rem 3.5rem;
+  overflow-y: scroll;
+  height: 50rem; }
+  .home ::-webkit-scrollbar-button {
+    display: block;
+    height: 13px;
+    border-radius: 0px; }
+  .home ::-webkit-scrollbar-thumb {
+    background-color: #ffe137;
+    border-radius: 10px; }
+  .home ::-webkit-scrollbar-track {
+    background-color: #ffffff3a; }
+  .home ::-webkit-scrollbar {
+    width: 2px; }
+
+::-webkit-scrollbar-button {
+  display: block;
+  height: 13px;
+  border-radius: 0px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffe137;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff3a; }
+
+::-webkit-scrollbar {
+  width: 2px; }
+
+.project {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .project .coming-soon {
+    font-size: 10rem;
+    color: rgba(42, 42, 42, 0.828); }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/

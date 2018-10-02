@@ -1,0 +1,39 @@
+.home{
+    margin          : 4rem 3.5rem 3.5rem;
+    overflow-y      : scroll;
+    height          : 50rem;
+
+
+    ::-webkit-scrollbar-button{ 
+        display: block; height: 13px; 
+        border-radius: 0px; 
+        // background-color: #AAA; 
+    } 
+    
+    ::-webkit-scrollbar-thumb{ 
+        background-color: #ffe137; 
+        border-radius: 10px; 
+    } 
+    ::-webkit-scrollbar-track{ background-color: #ffffff3a; } 
+     
+    ::-webkit-scrollbar{ width: 2px; }
+    
+   
+    &__section-left{
+        
+    }
+}
+
+::-webkit-scrollbar-button{ 
+    display: block; height: 13px; 
+    border-radius: 0px; 
+    // background-color: #AAA; 
+} 
+
+::-webkit-scrollbar-thumb{ 
+    background-color: #ffe137; 
+    border-radius: 10px; 
+} 
+::-webkit-scrollbar-track{ background-color: #ffffff3a; } 
+ 
+::-webkit-scrollbar{ width: 2px; }
