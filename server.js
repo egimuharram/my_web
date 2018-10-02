@@ -2,14 +2,14 @@ const express = require('express');
 const next = require('next');
 const mysql = require('mysql');
 
-var db = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : 'cr3s3nd0',
-    database : 'nextjs1'
-  });
+// var db = mysql.createConnection({
+//     host     : 'localhost',
+//     user     : 'root',
+//     password : 'cr3s3nd0',
+//     database : 'nextjs1'
+//   });
 
-db.connect()
+// db.connect()
 
 const port = process.env.PORT || 3005;
 const dev = process.env.NODE_ENV !== 'production';
