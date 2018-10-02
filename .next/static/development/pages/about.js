@@ -12600,7 +12600,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "project"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-        className: "coming-soon"
+        className: "coming-soon vibrate-1"
       }, "under development!!")));
     }
   }]);
@@ -12631,7 +12631,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 7:
+/***/ 6:
 /*!******************************!*\
   !*** multi ./pages/about.js ***!
   \******************************/
@@ -12656,5 +12656,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js","styles"]]]));;
+},[[6,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=about.js.map

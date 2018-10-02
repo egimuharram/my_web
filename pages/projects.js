@@ -5,7 +5,7 @@ const works = () => {
   return (
     <Layout title={'Works'}>
           <div className="project">
-            <h1 className="coming-soon">under development!!</h1>
+            <h1 className="coming-soon vibrate-1">under development!!</h1>
           </div>
     </Layout>
   )

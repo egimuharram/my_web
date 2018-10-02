@@ -12808,7 +12808,7 @@ var Index = function Index(props) {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "project"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "coming-soon"
+    className: "coming-soon vibrate-1"
   }, "under development!!"))));
 };
 
@@ -12835,7 +12835,7 @@ var Index = function Index(props) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 7:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -12860,5 +12860,5 @@ module.exports = dll_5d62d38be3592dca3a42;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]));;
+},[[7,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=index.js.map
