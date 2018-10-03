@@ -1,4 +1,6 @@
 import Header from './header';
+import Header2 from './header2';
+
 import '../sass/main.scss';
 import Head from 'next/head';
 
@@ -14,16 +16,11 @@ const Layout = ({children,title}) => (
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-XXXXXX');`}} />
             {/* Google Analytics */}
-
         </Head>
-    
             <noscript dangerouslySetInnerHTML={{__html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden;"></iframe>`}} />
-
-        <Header />  
-
-        {children}
-
-
+        <Header2 />
+            {/* <Header />   */}
+            {children}
     </div>
 )
 

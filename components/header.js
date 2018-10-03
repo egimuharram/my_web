@@ -4,7 +4,7 @@ import '../sass/main.scss';
 
 
 const Header = () => (
-    <div className="navigation">
+    <div className="collapse navbar-collapse navigation">
         <ul className="nav justify-content-center">
             <li className="nav-item navigation__list">
                 <Link activeClassName="active" href="/">
