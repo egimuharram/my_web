@@ -11,12 +11,7 @@ class About extends Component{
   state = {
     data: []
   }
-  componentDidMount(){
-    axios.get(`http://localhost:3001/about`)
-    .then(res=>
-      this.setState({data:res.data})      
-    );
-  }
+  
   render(){
     // console.log(this.state.data)
     return (

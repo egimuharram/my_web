@@ -1,47 +1,21 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_79e292258924799826fe.js"
+  ],
   "pages": {
     "/_app": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.20439c2e.chunk.css",
-      "static/chunks/commons.25ece1633e717dbe75d9.js",
-      "static/runtime/main-1c641221d01cb2165d1d.js"
-    ],
-    "/about": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.20439c2e.chunk.css",
-      "static/chunks/commons.25ece1633e717dbe75d9.js",
-      "static/runtime/main-1c641221d01cb2165d1d.js"
-    ],
-    "/contact": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.20439c2e.chunk.css",
-      "static/chunks/commons.25ece1633e717dbe75d9.js",
-      "static/runtime/main-1c641221d01cb2165d1d.js"
-    ],
-    "/index": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.20439c2e.chunk.css",
-      "static/chunks/commons.25ece1633e717dbe75d9.js",
-      "static/runtime/main-1c641221d01cb2165d1d.js"
-    ],
-    "/projects": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.20439c2e.chunk.css",
-      "static/chunks/commons.25ece1633e717dbe75d9.js",
-      "static/runtime/main-1c641221d01cb2165d1d.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.20439c2e.chunk.css",
-      "static/chunks/commons.25ece1633e717dbe75d9.js",
-      "static/runtime/main-1c641221d01cb2165d1d.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
-    "/": [
-      "static/runtime/webpack-89179faa512dd01fbb62.js",
-      "static/css/commons.20439c2e.chunk.css",
-      "static/chunks/commons.25ece1633e717dbe75d9.js",
-      "static/runtime/main-1c641221d01cb2165d1d.js"
+    "/contact": [
+      "static/runtime/webpack.js",
+      "static/css/styles.chunk.css",
+      "static/chunks/styles.js",
+      "static/runtime/main.js"
     ]
   }
 }

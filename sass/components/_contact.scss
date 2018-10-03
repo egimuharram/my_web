@@ -36,7 +36,7 @@
 }
 
 .contact-section{
-    margin          : 8rem 3.5rem 3.5rem;
+    margin          : 7rem 3.5rem 3.5rem;
     vertical-align  : middle;
     &__form{
         padding     : 2rem;
@@ -78,9 +78,7 @@
                 }
             }
         }
-        &-input{
-            // border-radius: .5rem !important;
-        }
+        
         &-textarea{
             // border-radius: .5rem !important;
             height: 4.5rem !important;
