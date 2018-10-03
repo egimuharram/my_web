@@ -12634,13 +12634,26 @@ function (_Component) {
           email = _this$state.email,
           phonenumber = _this$state.phonenumber,
           message = _this$state.message;
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('https://fgapi.now.sh/frm', {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('https://fgapi.now.sh/form', {
         name: name,
         email: email,
         phonenumber: phonenumber,
         message: message
       }).then(function (result) {
         console.log(result);
+
+        _this.setState({
+          info: 'berhasil terkirim',
+          name: '',
+          email: '',
+          phonenumber: ''
+        });
+
+        setTimeout(function () {
+          _this.setState({
+            info: null
+          });
+        }, 3000);
       });
     });
 
@@ -12654,7 +12667,8 @@ function (_Component) {
           name = _this$state2.name,
           email = _this$state2.email,
           phonenumber = _this$state2.phonenumber,
-          message = _this$state2.message;
+          message = _this$state2.message,
+          info = _this$state2.info;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MyLayout_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
         title: 'Contact'
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -12720,7 +12734,10 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-paper-plane",
         "aria-hidden": "true"
-      }), " Send "))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), " Send "))), info !== '' && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "alert alert-light text-center",
+        role: "alert"
+      }, info))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "contact-section__form col-sm-6"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "contact-section__form-bottom m-t-10"

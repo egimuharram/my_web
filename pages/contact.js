@@ -24,17 +24,21 @@ class Contact extends Component {
         e.preventDefault();
 
         const {name,email,phonenumber,message} = this.state
-        axios.post('https://fgapi.now.sh/frm', {name,email,phonenumber,message} )
+        axios.post('https://fgapi.now.sh/form', {name,email,phonenumber,message} )
         .then((result) => {
             console.log(result);
-            
+            this.setState({info: 'berhasil terkirim',name:'',email:'',phonenumber:''})
+            setTimeout(() => {
+                this.setState({info: null});
+              }, 3000)
         });
+
       }
     
     
 
     render(){
-        const {name,email,phonenumber,message} = this.state
+        const {name,email,phonenumber,message,info} = this.state
         return (
             <Layout title={'Contact'}>
                 <div className="container contact-section">
@@ -62,6 +66,11 @@ class Contact extends Component {
                                         <span className="btn-custom"><i className="fa fa-paper-plane" aria-hidden="true"></i> Send </span>
                                     </button>
                                 </div>
+                                {info !== '' && 
+                                    <div className="alert alert-light text-center" role="alert">
+                                        {info}
+                                    </div>
+                                }
                             </form>
                         </div>
 

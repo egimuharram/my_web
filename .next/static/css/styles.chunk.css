@@ -339,6 +339,19 @@ body {
     .contact-section__form-textarea {
       height: 4.5rem !important; }
 
+.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  width: 90%; }
+
+.alert-light {
+  color: #242424 !important;
+  background-color: transparent !important;
+  border-color: #fdfdfe00 !important; }
+
 .home {
   margin: 4rem 3.5rem 3.5rem;
   overflow-y: scroll;
