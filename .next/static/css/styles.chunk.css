@@ -215,6 +215,9 @@ body {
   .btn--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards; }
+  @media only screen and (max-width: 37.5em) {
+    .btn {
+      width: 100%; } }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1rem;
@@ -279,7 +282,7 @@ body {
   padding: 0 !important;
   margin-top: 1.5rem;
   margin-right: 14rem;
-  margin-left: 13rem; }
+  margin-left: 12.5rem; }
   .navigation__list a:hover {
     color: #313131; }
 
@@ -311,9 +314,12 @@ body {
     border-color: inherit;
     -webkit-box-shadow: none;
     box-shadow: none; }
+  @media only screen and (max-width: 37.5em) {
+    .form-control2 {
+      width: 100%; } }
 
 .contact-section {
-  margin: 8rem 3.5rem 3.5rem;
+  margin: 7rem 3.5rem 3.5rem;
   vertical-align: middle; }
   .contact-section__form {
     padding: 2rem;
@@ -325,8 +331,14 @@ body {
         color: black; }
         .contact-section__form-top h3 a:hover {
           text-decoration: none; }
+      @media only screen and (max-width: 37.5em) {
+        .contact-section__form-top {
+          padding-left: 0; } }
     .contact-section__form-bottom {
       padding-left: 15rem; }
+      @media only screen and (max-width: 37.5em) {
+        .contact-section__form-bottom {
+          padding-left: 0; } }
     .contact-section__form ul li {
       margin-right: 2.5rem;
       display: inline-block;

@@ -33,6 +33,10 @@
         -webkit-box-shadow  : none;
         box-shadow          : none;
     }
+    @include respond(phone) { // width <= 600
+        width   : 100%;  
+    }
+  
 }
 
 .contact-section{
@@ -52,10 +56,17 @@
                     text-decoration: none;
                 }
             }
+            @include respond(phone) { // width <= 600
+                padding-left: 0;
+            }
         }
 
         &-bottom{
             padding-left: 15rem;
+            
+            @include respond(phone) { // width <= 600
+                padding-left: 0;
+            }
         }
 
         ul{

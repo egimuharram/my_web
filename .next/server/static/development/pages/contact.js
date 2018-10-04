@@ -105,11 +105,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ "./components/header.js");
-/* harmony import */ var _header2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header2 */ "./components/header2.js");
-/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sass/main.scss */ "./sass/main.scss");
-/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_sass_main_scss__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _header2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./header2 */ "./components/header2.js");
+/* harmony import */ var _lib_GAWarp__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/GAWarp */ "./lib/GAWarp.js");
+/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../sass/main.scss */ "./sass/main.scss");
+/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_sass_main_scss__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
@@ -121,18 +123,10 @@ var Layout = function Layout(_ref) {
       title = _ref.title;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "box-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Faikar | ", title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
-    dangerouslySetInnerHTML: {
-      __html: "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n            })(window,document,'script','dataLayer','GTM-XXXXXX');"
-    }
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("noscript", {
-    dangerouslySetInnerHTML: {
-      __html: "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden;\"></iframe>"
-    }
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_header2__WEBPACK_IMPORTED_MODULE_2__["default"], null), children);
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Faikar | ", title)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_header2__WEBPACK_IMPORTED_MODULE_3__["default"], null), children);
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Layout);
+/* harmony default export */ __webpack_exports__["default"] = (Object(_lib_GAWarp__WEBPACK_IMPORTED_MODULE_4__["default"])(Layout));
 
 /***/ }),
 
@@ -266,6 +260,106 @@ var header2 = function header2() {
 
 /***/ }),
 
+/***/ "./lib/GAWarp.js":
+/*!***********************!*\
+  !*** ./lib/GAWarp.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-ga */ "react-ga");
+/* harmony import */ var react_ga__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_ga__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+
+
+
+var debug = "development" !== 'production';
+var G_TAG_ID = 'UA-126880286-1';
+/* harmony default export */ __webpack_exports__["default"] = (function (WrappedComponent) {
+  return (
+    /*#__PURE__*/
+    function (_Component) {
+      _inherits(GaWrapper, _Component);
+
+      function GaWrapper(props) {
+        var _this;
+
+        _classCallCheck(this, GaWrapper);
+
+        _this = _possibleConstructorReturn(this, _getPrototypeOf(GaWrapper).call(this, props));
+        _this.trackPageview = _this.trackPageview.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+        return _this;
+      }
+
+      _createClass(GaWrapper, [{
+        key: "componentDidMount",
+        value: function componentDidMount() {
+          this.initGa();
+          this.trackPageview();
+          next_router__WEBPACK_IMPORTED_MODULE_2___default.a.router.events.on('routeChangeComplete', this.trackPageview);
+        }
+      }, {
+        key: "componentWillUnmount",
+        value: function componentWillUnmount() {
+          next_router__WEBPACK_IMPORTED_MODULE_2___default.a.router.events.off('routeChangeComplete', this.trackPageview);
+        }
+      }, {
+        key: "trackPageview",
+        value: function trackPageview() {
+          var path = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : document.location.pathname;
+
+          if (path !== this.lastTrackedPath) {
+            react_ga__WEBPACK_IMPORTED_MODULE_1___default.a.pageview(path);
+            this.lastTrackedPath = path;
+          }
+        }
+      }, {
+        key: "initGa",
+        value: function initGa() {
+          if (!window.GA_INITIALIZED) {
+            react_ga__WEBPACK_IMPORTED_MODULE_1___default.a.initialize('UA-126880286-1', {
+              debug: debug
+            });
+            window.GA_INITIALIZED = true;
+          }
+        }
+      }, {
+        key: "render",
+        value: function render() {
+          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(WrappedComponent, this.props);
+        }
+      }]);
+
+      return GaWrapper;
+    }(react__WEBPACK_IMPORTED_MODULE_0__["Component"])
+  );
+});
+
+/***/ }),
+
 /***/ "./lib/Link.js":
 /*!*********************!*\
   !*** ./lib/Link.js ***!
@@ -296,6 +390,7 @@ var ActiveLink = function ActiveLink(_ref) {
 
   var child = react__WEBPACK_IMPORTED_MODULE_2__["Children"].only(children);
   var className = child.props.className || '';
+  console.log(className);
 
   if (router.pathname === props.href && props.activeClassName) {
     className = "".concat(className, " ").concat(props.activeClassName).trim();
@@ -522,7 +617,7 @@ function (_Component) {
         href: "https://github.com/faikarghas",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        class: "fab fa-github"
+        className: "fab fa-github"
       }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "contact-section__form-top m-t-50"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
@@ -620,6 +715,17 @@ module.exports = require("next/router");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-ga":
+/*!***************************!*\
+  !*** external "react-ga" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-ga");
 
 /***/ }),
 

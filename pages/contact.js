@@ -82,7 +82,7 @@ class Contact extends Component {
                                 <ul>
                                     <li><a href="https://www.instagram.com/faiikarr" target="_blank"><i className="fab fa-instagram"></i></a></li>
                                     <li><a href="https://www.linkedin.com/in/faikar-ghassan-57632ab4/" target="_blank"><i className="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="https://github.com/faikarghas" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="https://github.com/faikarghas" target="_blank"><i className="fab fa-github"></i></a></li>
                                 </ul>
                             </div>
                             <div className="contact-section__form-top m-t-50">

@@ -116,6 +116,9 @@
         animation-fill-mode: backwards;
     }
 
+    @include respond(phone) { // width <= 600
+        width   : 100%;  
+    }
 
 }
 
