@@ -12,22 +12,22 @@ const header2 =  () => (
         <div className="collapse navbar-collapse navigation" id="navbarTogglerDemo03">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-center">
                 <li className="nav-item navigation__list">
-                    <Link activeClassName="active" href="/">
-                        <a className="nav-link">home</a>
+                    <Link activeClassName="active" href="/" prefetch>
+                        <a className="nav-link navigation__list-home text-pop-up-bottom">home</a>
                     </Link>
                 </li>
                 <li className="nav-item navigation__list">
-                    <Link activeClassName="active" href="/about">
+                    <Link activeClassName="active" href="/about" prefetch>
                         <a className="nav-link">about <br/> me</a>
                     </Link>
                 </li>
                 <li className="nav-item navigation__list">
-                    <Link activeClassName="active" href="/projects">
+                    <Link activeClassName="active" href="/projects" prefetch>
                         <a className="nav-link">projects</a>
                     </Link>
                 </li>
                 <li className="nav-item navigation__list">
-                    <Link activeClassName="active" href="/contact">
+                    <Link activeClassName="active" href="/contact" prefetch>
                         <a className="nav-link">contact</a>
                     </Link>
                 </li>

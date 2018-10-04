@@ -159,7 +159,7 @@ function (_Document) {
         rel: "stylesheet",
         href: "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
         integrity: "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO",
-        crossorigin: "anonymous"
+        crossOrigin: "anonymous"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         href: "https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat:400,500",
         rel: "stylesheet"
@@ -170,6 +170,9 @@ function (_Document) {
         crossOrigin: "anonymous"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         href: "https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster|Montserrat",
+        rel: "stylesheet"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+        href: "https://fonts.googleapis.com/css?family=Mada:500,600",
         rel: "stylesheet"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
         src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",

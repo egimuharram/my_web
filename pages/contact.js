@@ -22,9 +22,9 @@ class Contact extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-
+        // 'https://fgapi.now.sh/form'
         const {name,email,phonenumber,message} = this.state
-        axios.post('https://fgapi.now.sh/form', {name,email,phonenumber,message} )
+        axios.post('https://fgapi.now.sh/api/form', {name,email,phonenumber,message} )
         .then((result) => {
             console.log(result);
             this.setState({info: 'berhasil terkirim',name:'',email:'',phonenumber:''})
@@ -42,8 +42,29 @@ class Contact extends Component {
         return (
             <Layout title={'Contact'}>
                 <div className="container contact-section">
-                    <div className="row ">
-                        <div className="contact-section__form col-sm-6">
+                    <div className="row">
+                        <div className="contact-section__form p-l-50 col-sm-6">
+                            <div className="contact-section__form-bottom m-t-10">
+                                <h1>
+                                    follow me on social networks
+                                </h1>
+                                <ul>
+                                    <li><a href="https://www.instagram.com/faiikarr" target="_blank"><i className="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/faikar-ghassan-57632ab4/" target="_blank"><i className="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="https://github.com/faikarghas" target="_blank"><i className="fab fa-github"></i></a></li>
+                                </ul>
+                            </div>
+                            <div className="contact-section__form-top m-t-50">
+                                <h3><i className="fas fa-phone"></i><a target="_blank" href="https://api.whatsapp.com/send?phone=6281287831421&text=Hi Faikar, I need a website.">&nbsp; + 62 812 8783 1421 (Lets Talk)</a> </h3>
+                                <br/>
+                                <h3><i className="far fa-envelope"></i>&nbsp; ghassanfaikar@yahoo.com</h3>
+                                <br/>
+                                <h3><i className="fas fa-map-marker-alt"></i> &nbsp; South Tangerang, Indonesia</h3>
+                            </div>
+                           
+                        </div>
+
+                         <div className="contact-section__form col-sm-6 ">
                             <form onSubmit={this.onSubmit}>
                                 <div className="form-group">
                                     <label htmlFor="exampleInputUsername">your name</label>
@@ -72,27 +93,6 @@ class Contact extends Component {
                                     </div>
                                 }
                             </form>
-                        </div>
-
-                        <div className="contact-section__form col-sm-6">
-                            <div className="contact-section__form-bottom m-t-10">
-                                <h1>
-                                    follow me on social networks
-                                </h1>
-                                <ul>
-                                    <li><a href="https://www.instagram.com/faiikarr" target="_blank"><i className="fab fa-instagram"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/in/faikar-ghassan-57632ab4/" target="_blank"><i className="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="https://github.com/faikarghas" target="_blank"><i className="fab fa-github"></i></a></li>
-                                </ul>
-                            </div>
-                            <div className="contact-section__form-top m-t-50">
-                                <h3><i className="fas fa-phone"></i><a target="_blank" href="https://api.whatsapp.com/send?phone=6281287831421&text=Hi Faikar, I need a website.">&nbsp; + 62 812 8783 1421 (Lets Talk)</a> </h3>
-                                <br/>
-                                <h3><i className="far fa-envelope"></i>&nbsp; ghassanfaikar@yahoo.com</h3>
-                                <br/>
-                                <h3><i className="fas fa-map-marker-alt"></i> &nbsp; South Tangerang, Indonesia</h3>
-                            </div>
-                           
                         </div>
                     </div>
                 </div>

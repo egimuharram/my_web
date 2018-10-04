@@ -8,7 +8,7 @@ const Header = () => (
         <ul className="nav justify-content-center">
             <li className="nav-item navigation__list">
                 <Link activeClassName="active" href="/">
-                    <a className="nav-link">home</a>
+                    <a className="nav-link navigation__list-home">home</a>
                 </Link>
             </li>
             <li className="nav-item navigation__list">
