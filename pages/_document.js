@@ -5,14 +5,13 @@ export default class MyDocument extends Document {
         return (
             <html>
                 <Head>
-                    {/* <title>Faikar</title> */}
                     <meta charSet="UTF-8" />
                     <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
 
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                    
-                    {/* <link rel="stylesheet" href="/_next/static/style.css" /> */}
+                    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossOrigin="anonymous"></link>
                     <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat:400,500" rel="stylesheet"></link>
                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossOrigin="anonymous"></link>

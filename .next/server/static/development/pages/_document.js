@@ -156,6 +156,10 @@ function (_Document) {
         name: "viewport",
         content: "width=device-width, initial-scale=1.0"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/static/favicon.ico"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
         rel: "stylesheet",
         href: "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css",
         integrity: "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO",

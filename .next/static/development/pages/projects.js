@@ -11846,7 +11846,7 @@ var works = function works() {
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!*********************************!*\
   !*** multi ./pages/projects.js ***!
   \*********************************/
@@ -11871,5 +11871,5 @@ module.exports = dll_c47e886f146f98ef8f7b;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]));;
+},[[5,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=projects.js.map
