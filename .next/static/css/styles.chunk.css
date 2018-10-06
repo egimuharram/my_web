@@ -335,7 +335,7 @@ body {
 .footer {
   position: absolute;
   bottom: 10px;
-  left: 45%;
+  left: 46%;
   font-family: "Mada", sans-serif;
   font-weight: 500;
   color: rgba(143, 141, 125, 0.712); }
@@ -376,31 +376,47 @@ body {
       padding: 2rem 0rem; } }
 
 .contact-section {
-  margin: 5rem 3.5rem 5rem;
-  vertical-align: middle; }
+  margin: 6rem 3.5rem 5rem;
+  vertical-align: middle;
+  position: relative; }
   .contact-section__form {
     padding: 2rem;
     font-size: 1.5rem;
     font-family: 'Josefin Sans', sans-serif; }
-    .contact-section__form-top h3 a {
-      color: black; }
-      .contact-section__form-top h3 a:hover {
-        text-decoration: none; }
-    @media only screen and (max-width: 37.5em) {
-      .contact-section__form-top {
-        padding-left: 0; } }
-    @media only screen and (max-width: 37.5em) {
-      .contact-section__form-bottom {
-        padding-left: 0; } }
+    .contact-section__form-top {
+      padding-left: 2rem; }
+      .contact-section__form-top h3 a {
+        color: black; }
+        .contact-section__form-top h3 a:hover {
+          text-decoration: none; }
+      @media only screen and (max-width: 37.5em) {
+        .contact-section__form-top {
+          padding-left: 0; } }
+    .contact-section__form-bottom {
+      padding-left: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .contact-section__form-bottom {
+          padding-left: 0; } }
+      .contact-section__form-bottom .test {
+        position: absolute;
+        bottom: 6.5%; }
     .contact-section__form ul li {
       margin-right: 2.5rem;
       display: inline-block;
       list-style: none;
       font-size: 2.5rem; }
-      .contact-section__form ul li a .fa-instagram {
-        color: #d6243c; }
-      .contact-section__form ul li a .fa-github {
-        color: black; }
+      .contact-section__form ul li a {
+        color: #070707; }
+        .contact-section__form ul li a .fa-instagram:hover {
+          color: #e73d54; }
+        .contact-section__form ul li a .fa-github:hover {
+          color: black; }
+        .contact-section__form ul li a .fa-facebook:hover {
+          color: #4267B2; }
+        .contact-section__form ul li a .fa-twitter:hover {
+          color: #1DA1F2; }
+        .contact-section__form ul li a .fa-linkedin-in:hover {
+          color: #0077B5; }
     .contact-section__form-textarea {
       height: 4.5rem !important; }
 
