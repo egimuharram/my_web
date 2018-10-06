@@ -197,8 +197,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); }
   .project .coming-soon {
-    font-size: 10rem;
-    color: rgba(42, 42, 42, 0.828); }
+    font-size: 10rem; }
     @media only screen and (max-width: 37.5em) {
       .project .coming-soon {
         font-size: 8rem; } }
@@ -282,7 +281,6 @@ body {
   transform: translateY(0); }
 
 .box-header {
-  background-image: linear-gradient(#FFC400, #FFCE1F, #FFDA54);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -294,36 +292,15 @@ body {
   height: 100vh;
   position: relative; }
 
-.box-project {
-  background-image: url(http://localhost:3001/photo/head.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  padding: 3rem;
-  width: 100%;
-  z-index: -1; }
-
-.box-contact {
-  background-image: url(http://localhost:3001/photo/head.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  padding: 3rem;
-  width: 100%;
-  z-index: -1; }
-
 @media only screen and (max-width: 37.5em) {
   .navbar {
     padding-left: 1.5rem !important; } }
 
 .navigation__list .active {
-  color: #333333 !important; }
+  font-size: 1.6rem; }
 
 .navigation__list a {
   font-family: "Comfortaa", cursive;
-  color: rgba(255, 255, 255, 0.842) !important;
   font-size: 1.5rem;
   font-weight: 700;
   padding: 0 !important;
@@ -347,6 +324,11 @@ body {
   font-family: "Mada", sans-serif;
   font-weight: 500;
   color: rgba(143, 141, 125, 0.712); }
+  .footer ul {
+    list-style: none; }
+    .footer ul li {
+      display: inline-block;
+      padding: 0 .9rem; }
   .footer h4 {
     font-size: 1.2rem; }
 
@@ -393,10 +375,8 @@ body {
     font-family: 'Josefin Sans', sans-serif; }
     .contact-section__form-top {
       padding-left: 2rem; }
-      .contact-section__form-top h3 a {
-        color: black; }
-        .contact-section__form-top h3 a:hover {
-          text-decoration: none; }
+      .contact-section__form-top h3 a:hover {
+        text-decoration: none; }
       @media only screen and (max-width: 37.5em) {
         .contact-section__form-top {
           padding-left: 0; } }
@@ -431,7 +411,7 @@ body {
 .alert {
   position: relative;
   padding: .75rem 1.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0 !important;
   border: 1px solid transparent;
   border-radius: .25rem;
   width: 90%; }
@@ -439,7 +419,8 @@ body {
 .alert-light {
   color: #242424 !important;
   background-color: transparent !important;
-  border-color: #fdfdfe00 !important; }
+  border-color: #fdfdfe00 !important;
+  height: 20px !important; }
 
 .home {
   margin: 4rem 3.5rem 3.5rem;

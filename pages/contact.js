@@ -1,6 +1,7 @@
 import React , { Component } from 'react'
-import Fade from 'react-reveal/Fade';
 import axios from 'axios';
+
+import {connect} from 'react-redux';
 
 import Layout from '../components/MyLayout.js';
 import '../sass/main.scss';
@@ -44,8 +45,8 @@ class Contact extends Component {
                 <div className="container contact-section">
                     <div className="row">
                         <div className="contact-section__form col-sm-6">
-                            <div className="contact-section__form-top m-t-10">
-                                <h3><i className="fas fa-phone"></i><a target="_blank" href="https://api.whatsapp.com/send?phone=6281287831421&text=Hi Faikar">&nbsp; + 62 812 8783 1421 (Lets Talk)</a> </h3>
+                            <div className="contact-section__form-top m-t-10" style={{color:this.props.bodyColor}}>
+                                <h3><i className="fas fa-phone"></i><a style={{color:this.props.bodyColor}} target="_blank" href="https://api.whatsapp.com/send?phone=6281287831421&text=Hi Faikar">&nbsp; + 62 812 8783 1421 (Lets Talk)</a> </h3>
                                 <br/>
                                 <h3><i className="far fa-envelope"></i>&nbsp; ghassanfaikar@yahoo.com</h3>
                                 <br/>
@@ -55,7 +56,7 @@ class Contact extends Component {
                                 <br/>
                             </div>
                             <div className="contact-section__form-bottom m-t-50">
-                                <ul class="test">
+                                <ul className="test">
                                     <li><a href="https://www.instagram.com/faiikarr" target="_blank"><i className="fab fa-instagram"></i></a></li>
                                     <li><a href="https://www.linkedin.com" target="_blank"><i className="fab fa-linkedin-in"></i></a></li>
                                     <li><a href="https://github.com/faikarghas" target="_blank"><i className="fab fa-github"></i></a></li>
@@ -68,19 +69,19 @@ class Contact extends Component {
                          <div className="contact-section__form col-sm-6 ">
                             <form onSubmit={this.onSubmit}>
                                 <div className="form-group">
-                                    <label htmlFor="exampleInputUsername">your name</label>
+                                    <label htmlFor="exampleInputUsername" style={{color:this.props.bodyColor}}>your name</label>
                                     <input type="text" className="form-control2 contact-section__form-input input-tr-bb" id="" name="name" value={name} onChange={this.onChange} required></input>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="exampleInputEmail">email Address</label>
+                                    <label htmlFor="exampleInputEmail" style={{color:this.props.bodyColor}}>email Address</label>
                                     <input type="email" className="form-control2 contact-section__form-input input-tr-bb" id="exampleInputEmail" name="email" value={email} onChange={this.onChange} required></input>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="telephone">mobile No.</label>
+                                    <label htmlFor="telephone" style={{color:this.props.bodyColor}}>mobile No.</label>
                                     <input type="tel" className="form-control2 contact-section__form-input input-tr-bb" id="telephone" name="phonenumber" value={phonenumber} onChange={this.onChange} required></input>
                                 </div>
                                 <div className="form-group">
-                                    <label htmlFor="description">message</label>
+                                    <label htmlFor="description" style={{color:this.props.bodyColor}}>message</label>
                                     <textarea className="form-control2 contact-section__form-textarea input-tr-bb" id="description" name="message" value={message} onChange={this.onChange} required></textarea>
                                 </div>
                                 <div>
@@ -102,4 +103,10 @@ class Contact extends Component {
     }
 }
 
-export default Contact
+const mapPropsToState = state => {
+    return{
+      bodyColor:state.bodyColor
+    }
+}
+
+export default connect(mapPropsToState)(Contact)

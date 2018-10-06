@@ -1,5 +1,25 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\_app.js"],{
 
+/***/ "./lib/updateObject.js":
+/*!*****************************!*\
+  !*** ./lib/updateObject.js ***!
+  \*****************************/
+/*! exports provided: updateObject */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateObject", function() { return updateObject; });
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var updateObject = function updateObject(oldObject, updatedProperties) {
+  return _objectSpread({}, oldObject, updatedProperties);
+};
+
+/***/ }),
+
 /***/ "./lib/with-redux-store.js":
 /*!*********************************!*\
   !*** ./lib/with-redux-store.js ***!
@@ -13,7 +33,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _redux_initStore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../redux/initStore */ "./redux/initStore.js");
+/* harmony import */ var _redux_store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../redux/store */ "./redux/store.js");
 
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -52,12 +72,12 @@ var __NEXT_REDUX_STORE__ = '__NEXT_REDUX_STORE__';
 function getOrCreateStore(initialState) {
   // Always make a new store if server, otherwise state is shared between requests
   if (isServer) {
-    return Object(_redux_initStore__WEBPACK_IMPORTED_MODULE_2__["initializeStore"])(initialState);
+    return Object(_redux_store__WEBPACK_IMPORTED_MODULE_2__["initializeStore"])(initialState);
   } // Create store if unavailable on the client and set it on the window object
 
 
   if (!window[__NEXT_REDUX_STORE__]) {
-    window[__NEXT_REDUX_STORE__] = Object(_redux_initStore__WEBPACK_IMPORTED_MODULE_2__["initializeStore"])(initialState);
+    window[__NEXT_REDUX_STORE__] = Object(_redux_store__WEBPACK_IMPORTED_MODULE_2__["initializeStore"])(initialState);
   }
 
   return window[__NEXT_REDUX_STORE__];
@@ -11704,31 +11724,23 @@ function (_App) {
 
 /***/ }),
 
-/***/ "./redux/initStore.js":
-/*!****************************!*\
-  !*** ./redux/initStore.js ***!
-  \****************************/
-/*! exports provided: initializeStore */
+/***/ "./redux/actionType.js":
+/*!*****************************!*\
+  !*** ./redux/actionType.js ***!
+  \*****************************/
+/*! exports provided: CHANGE_COlOR_BLUE, CHANGE_COlOR_YELLOW, CHANGE_COlOR_GREY, CHANGE_COlOR_AFTER_RE */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initializeStore", function() { return initializeStore; });
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
-/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-devtools-extension */ "./node_modules/redux-devtools-extension/index.js");
-/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store */ "./redux/store.js");
-
-
-
-
-var rootReducer = Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
-  coba: _store__WEBPACK_IMPORTED_MODULE_3__["reducer"]
-});
-function initializeStore() {
-  return Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(rootReducer, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])(redux_thunk__WEBPACK_IMPORTED_MODULE_2__["default"])));
-}
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CHANGE_COlOR_BLUE", function() { return CHANGE_COlOR_BLUE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CHANGE_COlOR_YELLOW", function() { return CHANGE_COlOR_YELLOW; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CHANGE_COlOR_GREY", function() { return CHANGE_COlOR_GREY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CHANGE_COlOR_AFTER_RE", function() { return CHANGE_COlOR_AFTER_RE; });
+var CHANGE_COlOR_BLUE = 'CHANGE_COlOR_BLUE';
+var CHANGE_COlOR_YELLOW = 'CHANGE_COlOR_YELLOW';
+var CHANGE_COlOR_GREY = 'CHANGE_COlOR_GREY';
+var CHANGE_COlOR_AFTER_RE = 'CHANGE_COlOR_AFTER_RE';
 
 /***/ }),
 
@@ -11736,28 +11748,29 @@ function initializeStore() {
 /*!************************!*\
   !*** ./redux/store.js ***!
   \************************/
-/*! exports provided: actionTypes, reducer, serverRenderClock, startClock, incrementCount, decrementCount, resetCount */
+/*! exports provided: reducer, initializeStore */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionTypes", function() { return actionTypes; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reducer", function() { return reducer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "serverRenderClock", function() { return serverRenderClock; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "startClock", function() { return startClock; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "incrementCount", function() { return incrementCount; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "decrementCount", function() { return decrementCount; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "resetCount", function() { return resetCount; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initializeStore", function() { return initializeStore; });
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-devtools-extension */ "./node_modules/redux-devtools-extension/index.js");
+/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux-thunk */ "./node_modules/redux-thunk/es/index.js");
+/* harmony import */ var _actionType__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./actionType */ "./redux/actionType.js");
+/* harmony import */ var _lib_updateObject__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../lib/updateObject */ "./lib/updateObject.js");
+
+
+
+
+
 var exampleInitialState = {
-  lastUpdate: 0,
-  light: false,
-  count: 0
-};
-var actionTypes = {
-  TICK: 'TICK',
-  INCREMENT: 'INCREMENT',
-  DECREMENT: 'DECREMENT',
-  RESET: 'RESET' // REDUCERS
+  color: 'linear-gradient(#FFC400,#FFCE1F,#FFDA54)',
+  navColor: 'white',
+  bodyColor: 'black',
+  colorC: false // REDUCERS
 
 };
 var reducer = function reducer() {
@@ -11765,72 +11778,46 @@ var reducer = function reducer() {
   var action = arguments.length > 1 ? arguments[1] : undefined;
 
   switch (action.type) {
-    case actionTypes.TICK:
-      return Object.assign({}, state, {
-        lastUpdate: action.ts,
-        light: !!action.light
+    case _actionType__WEBPACK_IMPORTED_MODULE_3__["CHANGE_COlOR_BLUE"]:
+      return Object(_lib_updateObject__WEBPACK_IMPORTED_MODULE_4__["updateObject"])(state, {
+        color: action.blue,
+        navColor: action.fontAblue,
+        bodyColor: action.bodyColor,
+        colorC: true
       });
 
-    case actionTypes.INCREMENT:
-      return Object.assign({}, state, {
-        count: state.count + 1
+    case _actionType__WEBPACK_IMPORTED_MODULE_3__["CHANGE_COlOR_YELLOW"]:
+      return Object(_lib_updateObject__WEBPACK_IMPORTED_MODULE_4__["updateObject"])(state, {
+        color: action.yellow,
+        navColor: action.fontAyellow,
+        bodyColor: 'black',
+        colorC: true
       });
 
-    case actionTypes.DECREMENT:
-      return Object.assign({}, state, {
-        count: state.count - 1
+    case _actionType__WEBPACK_IMPORTED_MODULE_3__["CHANGE_COlOR_GREY"]:
+      return Object(_lib_updateObject__WEBPACK_IMPORTED_MODULE_4__["updateObject"])(state, {
+        color: action.grey,
+        navColor: action.fontAgrey,
+        bodyColor: 'black',
+        colorC: true
       });
 
-    case actionTypes.RESET:
-      return Object.assign({}, state, {
-        count: exampleInitialState.count
+    case _actionType__WEBPACK_IMPORTED_MODULE_3__["CHANGE_COlOR_AFTER_RE"]:
+      return Object(_lib_updateObject__WEBPACK_IMPORTED_MODULE_4__["updateObject"])(state, {
+        color: action.thiscolor,
+        navColor: action.thisAcolor,
+        bodyColor: action.bodyColor,
+        colorC: true
       });
 
     default:
       return state;
   }
-}; // ACTIONS
-
-var serverRenderClock = function serverRenderClock(isServer) {
-  return function (dispatch) {
-    return dispatch({
-      type: actionTypes.TICK,
-      light: !isServer,
-      ts: Date.now()
-    });
-  };
 };
-var startClock = function startClock(dispatch) {
-  return setInterval(function () {
-    // Dispatch `TICK` every 1 second
-    dispatch({
-      type: actionTypes.TICK,
-      light: true,
-      ts: Date.now()
-    });
-  }, 1000);
-};
-var incrementCount = function incrementCount() {
-  return function (dispatch) {
-    return dispatch({
-      type: actionTypes.INCREMENT
-    });
-  };
-};
-var decrementCount = function decrementCount() {
-  return function (dispatch) {
-    return dispatch({
-      type: actionTypes.DECREMENT
-    });
-  };
-};
-var resetCount = function resetCount() {
-  return function (dispatch) {
-    return dispatch({
-      type: actionTypes.RESET
-    });
-  };
-};
+function initializeStore() {
+  var initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : exampleInitialState;
+  return Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(reducer, initialState, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_1__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"])(redux_thunk__WEBPACK_IMPORTED_MODULE_2__["default"])));
+}
 
 /***/ }),
 

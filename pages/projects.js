@@ -1,14 +1,22 @@
 import Layout from '../components/MyLayout.js';
+import ComingSoon from '../components/comingSoon';
+
+import {connect} from 'react-redux';
+
 import '../sass/main.scss';
 
-const works = () => {
+const works = props => {
   return (
     <Layout title={'Works'}>
-          <div className="project">
-            <h1 className="coming-soon vibrate-1">under development!!</h1>
-          </div>
+        <ComingSoon color={props.bodyColor}/>
     </Layout>
   )
 }
 
-export default works
+const mapPropsToState = state => {
+  return{
+    bodyColor:state.bodyColor
+  }
+}
+
+export default connect(mapPropsToState)(works)

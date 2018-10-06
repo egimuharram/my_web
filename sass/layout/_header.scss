@@ -1,5 +1,6 @@
 .box-header{  
-    background-image        : linear-gradient(#FFC400,#FFCE1F,#FFDA54);
+    // background-image        : linear-gradient(#FFC400,#FFCE1F,#FFDA54);
+    // background              : #1B244F;
     background-size         : cover;
     background-position     : bottom;
     background-repeat       : no-repeat;
@@ -11,24 +12,4 @@
 .pos-rel{
     height                  : 100vh;    
     position: relative;
-}
-.box-project{
-    background-image        : url(http://localhost:3001/photo/head.jpg);
-    background-size         : cover;
-    background-position     : center;
-    background-repeat       : no-repeat;
-    height                  : 100vh;    
-    padding                 : 3rem;
-    width                   : 100%;
-    z-index                 : -1;
-}
-.box-contact{
-    background-image        : url(http://localhost:3001/photo/head.jpg);
-    background-size         : cover;
-    background-position     : center;
-    background-repeat       : no-repeat;
-    height                  : 100vh;    
-    padding                 : 3rem;
-    width                   : 100%;
-    z-index                 : -1;
 }

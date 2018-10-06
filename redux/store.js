@@ -1,61 +1,55 @@
+import { createStore, applyMiddleware } from 'redux'
+import { composeWithDevTools } from 'redux-devtools-extension'
+import thunkMiddleware from 'redux-thunk'
+
+import * as actionTypes from './actionType';
+import {updateObject} from '../lib/updateObject'
+
+
 const exampleInitialState = {
-    lastUpdate: 0,
-    light: false,
-    count: 0
+    color: 'linear-gradient(#FFC400,#FFCE1F,#FFDA54)',
+    navColor : 'white',
+    bodyColor: 'black',
+    colorC: false,
 }
 
-export const actionTypes = {
-    TICK: 'TICK',
-    INCREMENT: 'INCREMENT',
-    DECREMENT: 'DECREMENT',
-    RESET: 'RESET'
-}
 
 // REDUCERS
 export const reducer = (state = exampleInitialState, action) => {
     switch (action.type) {
-        case actionTypes.TICK:
-            return Object.assign({}, state, {
-                lastUpdate: action.ts,
-                light: !!action.light
+        case actionTypes.CHANGE_COlOR_BLUE:
+            return updateObject(state, {
+                color: action.blue,
+                navColor: action.fontAblue,
+                bodyColor:action.bodyColor,
+                colorC: true
             })
-        case actionTypes.INCREMENT:
-            return Object.assign({}, state, {
-                count: state.count + 1
+        case actionTypes.CHANGE_COlOR_YELLOW:
+            return updateObject(state, {
+                color: action.yellow,
+                navColor: action.fontAyellow,
+                bodyColor: 'black',
+                colorC: true
             })
-        case actionTypes.DECREMENT:
-            return Object.assign({}, state, {
-                count: state.count - 1
+        case actionTypes.CHANGE_COlOR_GREY:
+            return updateObject(state, {
+                color: action.grey,
+                navColor: action.fontAgrey,
+                bodyColor: 'black',
+                colorC: true
             })
-        case actionTypes.RESET:
-            return Object.assign({}, state, {
-                count: exampleInitialState.count
+        case actionTypes.CHANGE_COlOR_AFTER_RE:
+            return updateObject(state, {
+                color: action.thiscolor,
+                navColor: action.thisAcolor,
+                bodyColor: action.bodyColor,
+                colorC: true
             })
         default: return state
     }
 }
 
-// ACTIONS
-export const serverRenderClock = (isServer) => dispatch => {
-    return dispatch({ type: actionTypes.TICK, light: !isServer, ts: Date.now() })
-}
-
-export const startClock = dispatch => {
-    return setInterval(() => {
-        // Dispatch `TICK` every 1 second
-        dispatch({ type: actionTypes.TICK, light: true, ts: Date.now() })
-    }, 1000)
-}
-
-export const incrementCount = () => dispatch => {
-    return dispatch({ type: actionTypes.INCREMENT })
-}
-
-export const decrementCount = () => dispatch => {
-    return dispatch({ type: actionTypes.DECREMENT })
-}
-
-export const resetCount = () => dispatch => {
-    return dispatch({ type: actionTypes.RESET })
-}
+export function initializeStore (initialState = exampleInitialState) {
+    return createStore(reducer, initialState, composeWithDevTools(applyMiddleware(thunkMiddleware)))
+  }
 

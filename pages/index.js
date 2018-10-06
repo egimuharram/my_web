@@ -1,14 +1,14 @@
 import Layout from '../components/MyLayout.js';
+import ComingSoon from '../components/comingSoon';
 import {connect} from 'react-redux'
 
 import '../sass/main.scss';
 
-const Index = (props) => (
+const Index = props => (
     <Layout title={'Home'}>
         <div className="container">
-            <div className="project">
-                <h1 className="coming-soon vibrate-1">under development!!</h1>
-            </div>
+            <ComingSoon color={props.bodyColor}/>
+
             {/* <div className="row">
                 <div className="home col-6">
                     <div className="home__section-left">
@@ -22,4 +22,11 @@ const Index = (props) => (
     </Layout>
 )
 
-export default connect()(Index)
+const mapPropsToState = state => {
+    return{
+      bodyColor:state.bodyColor
+    }
+  }
+  
+
+export default connect(mapPropsToState)(Index)

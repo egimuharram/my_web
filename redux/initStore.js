@@ -4,7 +4,7 @@ import thunkMiddleware from 'redux-thunk';
 import { reducer } from './store';
 
 const rootReducer = combineReducers({
-    coba: reducer
+    color: reducer
 });
 
 export function initializeStore() {

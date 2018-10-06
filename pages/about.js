@@ -1,7 +1,8 @@
 import React,{Component} from 'react';
 import Layout from '../components/MyLayout.js';
-import fetch from 'isomorphic-unfetch';
-import axios from 'axios';
+import ComingSoon from '../components/comingSoon';
+
+import {connect} from 'react-redux';
 
 import '../sass/main.scss';
 
@@ -13,15 +14,16 @@ class About extends Component{
   }
   
   render(){
-    // console.log(this.state.data)
     return (
           <Layout title={'About'}>
-              <div className="project">
-                <h1 className="coming-soon vibrate-1">under development!!</h1>
-              </div>
+              <ComingSoon color={this.props.bodyColor}/>
           </Layout>    
     )
   }
 }
-
-export default About
+const mapPropsToState = state => {
+  return{
+    bodyColor:state.bodyColor
+  }
+}
+export default connect(mapPropsToState)(About)

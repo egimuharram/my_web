@@ -19,7 +19,7 @@
     @include absCenter;
     .coming-soon{
         font-size: 10rem;
-        color: rgba(42, 42, 42, 0.828);
+        // color: rgba(42, 42, 42, 0.828);
         
         @include respond(phone) { // width <= 600
             font-size: 8rem;

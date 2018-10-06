@@ -59,7 +59,7 @@
             padding-left: 2rem;
 
             h3 a {
-                color: black;
+                // color: black;
                 &:hover{
                     text-decoration: none;
                 }
@@ -124,7 +124,7 @@
 .alert {
     position: relative;
     padding: .75rem 1.25rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0 !important;
     border: 1px solid transparent;
     border-radius: .25rem;
     width: 90%;
@@ -134,4 +134,5 @@
     color: #242424 !important;
     background-color: transparent !important;
     border-color: #fdfdfe00 !important;
+    height: 20px !important;
 }
