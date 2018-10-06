@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -579,7 +579,7 @@ function (_Component) {
         className: "far fa-building"
       }), "\xA0 Owl and Foxes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fas fa-map-marker-alt"
-      }), " \xA0 South Tangerang, Indonesia")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), " \xA0 South Tangerang, Indonesia"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "contact-section__form-bottom m-t-50"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         class: "test"
@@ -692,7 +692,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/

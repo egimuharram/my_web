@@ -1,11 +1,13 @@
+.navbar{
+    @include respond(phone) { // width <= 600
+        padding-left: 1.5rem !important;
+    }
+}
 .navigation{
     &__list{
-        // border-bottom   : 1px solid white;
 
         & .active{
-            // color       : rgb(49, 49, 49);
             color           : rgb(51, 51, 51) !important;
-            // border-bottom: 2px solid rgb(31, 23, 2);
         }
         
         & a{
@@ -20,6 +22,10 @@
             
             &:hover{
                 color       : rgb(49, 49, 49);
+            }
+
+            @include respond(phone) { // width <= 600
+                margin-left: 1rem !important;
             }
         }
 

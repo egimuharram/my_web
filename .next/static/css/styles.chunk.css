@@ -314,6 +314,10 @@ body {
   width: 100%;
   z-index: -1; }
 
+@media only screen and (max-width: 37.5em) {
+  .navbar {
+    padding-left: 1.5rem !important; } }
+
 .navigation__list .active {
   color: #333333 !important; }
 
@@ -328,14 +332,18 @@ body {
   margin-left: 12.5rem; }
   .navigation__list a:hover {
     color: #313131; }
+  @media only screen and (max-width: 37.5em) {
+    .navigation__list a {
+      margin-left: 1rem !important; } }
 
 .navigation__list-home {
   font-size: 3rem !important; }
 
 .footer {
   position: absolute;
-  bottom: 10px;
-  left: 46%;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: "Mada", sans-serif;
   font-weight: 500;
   color: rgba(143, 141, 125, 0.712); }

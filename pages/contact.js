@@ -52,6 +52,7 @@ class Contact extends Component {
                                 <h3><i className="far fa-building"></i>&nbsp; Owl and Foxes</h3>
                                 <br/>
                                 <h3><i className="fas fa-map-marker-alt"></i> &nbsp; South Tangerang, Indonesia</h3>
+                                <br/>
                             </div>
                             <div className="contact-section__form-bottom m-t-50">
                                 <ul class="test">
