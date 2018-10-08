@@ -7,8 +7,8 @@
     &__list{
 
         & .active{
-            // color           : rgb(51, 51, 51) !important;
-            font-size   : 1.6rem;
+            color           : rgb(51, 51, 51) !important;
+            font-size       : 1.6rem;
         }
         
         & a{
@@ -19,7 +19,9 @@
             margin-top      : 1.5rem;
             margin-right    : 14rem;
             margin-left     : 12.5rem;
-            
+            span{
+                cursor: pointer;
+            }
             &:hover{
                 color       : rgb(49, 49, 49);
             }

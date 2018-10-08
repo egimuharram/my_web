@@ -5,9 +5,26 @@
     height                  : 100vh;    
     width                   : 100%;
     padding                 : 2rem 3rem;
+    .childern{
+        height: 37rem;
+        @include respond(phone) { // width <= 600
+            height: 95rem;
+        }
+        @include respond(phone375) { // width <= 600
+            height: 85rem;    
+        }
+        @include respond(phone320) { // width <= 600
+            height: 70rem;    
+        }
+    }
+    
 }
   
 .pos-rel{
     height                  : 100vh;    
     position: relative;
+}
+
+.childern{
+
 }

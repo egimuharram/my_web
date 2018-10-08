@@ -287,6 +287,17 @@ body {
   height: 100vh;
   width: 100%;
   padding: 2rem 3rem; }
+  .box-header .childern {
+    height: 37rem; }
+    @media only screen and (max-width: 37.5em) {
+      .box-header .childern {
+        height: 95rem; } }
+    @media only screen and (max-width: 23.44em) {
+      .box-header .childern {
+        height: 85rem; } }
+    @media only screen and (max-width: 20em) {
+      .box-header .childern {
+        height: 70rem; } }
 
 .pos-rel {
   height: 100vh;
@@ -297,6 +308,7 @@ body {
     padding-left: 1.5rem !important; } }
 
 .navigation__list .active {
+  color: #333333 !important;
   font-size: 1.6rem; }
 
 .navigation__list a {
@@ -307,6 +319,8 @@ body {
   margin-top: 1.5rem;
   margin-right: 14rem;
   margin-left: 12.5rem; }
+  .navigation__list a span {
+    cursor: pointer; }
   .navigation__list a:hover {
     color: #313131; }
   @media only screen and (max-width: 37.5em) {
@@ -487,6 +501,32 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem; }
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin-top: 200px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
