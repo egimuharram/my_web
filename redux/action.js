@@ -6,7 +6,7 @@ const color = {
     grey:'#F8F8F8',
     fontAyellow: 'white',
     fontAblue: 'white',
-    fontAgrey: 'black',
+    fontAgrey: '#444',
     bodylight: 'white',
     bodydark:'black'
 }

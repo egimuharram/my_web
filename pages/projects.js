@@ -12,9 +12,9 @@ const works = props => {
   return (
     <Layout title={'Works'}>
         <div className="container project-section">
-          <div className="row justify-content-center">
-          {props.shows.map(item => (<Card title={item.Title}/>))}
-          </div>
+            <div className="row justify-content-center project-section__card" >
+              {props.shows.map(item => (<Card title={item.Title}/>))}
+            </div>
         </div>
     </Layout>
   )

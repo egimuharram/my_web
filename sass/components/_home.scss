@@ -10,14 +10,11 @@
     } 
     
     ::-webkit-scrollbar-thumb{ 
-        background-color: #ffe137; 
-        border-radius: 10px; 
+        display: none; 
     } 
     ::-webkit-scrollbar-track{ background-color: #ffffff3a; } 
      
     ::-webkit-scrollbar{ width: 2px; }
-    
-   
     
 }
 
@@ -27,8 +24,7 @@
 } 
 
 ::-webkit-scrollbar-thumb{ 
-    background-color: #ffe137; 
-    border-radius: 10px; 
+    display: none; 
 } 
 ::-webkit-scrollbar-track{ background-color: #ffffff3a; } 
  

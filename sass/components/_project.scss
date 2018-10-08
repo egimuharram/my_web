@@ -1,5 +1,20 @@
 .project-section{
     margin          : 6rem 3.5rem 5rem;
+    &__card{
+        overflow-y: scroll;
+        height: 34rem;
+        
+        
+        @include respond(phone) { // width <= 600
+            height: 100rem;    
+        }
+        @include respond(phone375) { // width <= 600
+            height: 85rem;    
+        }
+        @include respond(phone320) { // width <= 600
+            height: 70rem;    
+        }
+    }
 }
 .card{
     width           :30rem;
