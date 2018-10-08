@@ -23,7 +23,6 @@ class Contact extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        // 'https://fgapi.now.sh/form'
         const {name,email,phonenumber,message} = this.state
         axios.post('https://fgapi.now.sh/api/form', {name,email,phonenumber,message} )
         .then((result) => {

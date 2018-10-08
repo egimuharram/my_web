@@ -329,6 +329,8 @@ body {
     .footer ul li {
       display: inline-block;
       padding: 0 .9rem; }
+      .footer ul li .fa-circle {
+        cursor: pointer; }
   .footer h4 {
     font-size: 1.2rem; }
 
@@ -452,6 +454,29 @@ body {
 
 ::-webkit-scrollbar {
   width: 2px; }
+
+.project-section {
+  margin: 6rem 3.5rem 5rem; }
+
+.card {
+  width: 30rem;
+  height: 30rem;
+  margin: 3rem;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 32px;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd; }
+  .card:hover {
+    box-shadow: 0 10px 20px rgba(3, 27, 78, 0.1); }
+  .card-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

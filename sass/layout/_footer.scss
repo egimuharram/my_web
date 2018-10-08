@@ -8,6 +8,9 @@
         li{
             display: inline-block;
             padding: 0 .9rem;
+            .fa-circle{
+                cursor: pointer;
+            }
         }
     }
 
