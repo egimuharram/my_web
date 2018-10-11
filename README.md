@@ -1,1 +1,1 @@
-# my_web
+NEXT JS Project
